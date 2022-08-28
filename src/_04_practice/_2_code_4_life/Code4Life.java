@@ -15,19 +15,29 @@ public class Code4Life {
 	 * *****************/
 	static boolean canPlaySounds = true;
 	
+	public static void main(String[] args) {
+		
 	
 	// 1. Ask the user how many hours they spent coding this week.
-
+String numeth= JOptionPane.showInputDialog(null, "  what hour of code hath thy comitted?! ONLYETH NUMBETH ART ACCEBTABLE!!");
 	// 2. If it is less than or equal to 2, tell them to stop watching YouTube and
 	// write code instead.
-
+int nub= Integer.parseInt(numeth);
+if (nub < 1) {
+	JOptionPane.showMessageDialog(null, nub+"!? Why, I have never seen such insolence (smelled it too). Sitteth your bottom and gut tu woiyk, peasant");
+}
 	// 3. If it is greater than or equal to 3 AND less than or equal to 5, tell them
 	// they're a Code Ninja
-
+if (nub >= 1 && nub <2) {
+	JOptionPane.showMessageDialog(null, "humble brag, big deal you know how to studyeth, try harder next time! Ptoowie!!");
+}
 	// 4. If it is more than 5, call the playBatmanTheme  method, then 
 	//    call the displayBatman method.
-
-
+if (nub >= 2 ) {
+	JOptionPane.showMessageDialog(null, "uhmmn... Heheth not even close hack hack you art even- whats that noise?, well you arent-");
+	playBatmanTheme();
+}
+	}
 
 	
 	private static void playBatmanTheme() {
